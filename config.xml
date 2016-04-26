@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.pluginsapp691277" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ru.sample.ionicframework.classifiedapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Classified App</name>
-  <description>An Ionic Framework and Cordova project.</description>
+  <description>A simple classified app sample which is developed on Ionic 2 and Angular 2.</description>
   <author email="s.rehanuddin@gmail.com" href="http://rehanuddin.me/">Syed Rehanuddin</author>
   <content src="index.html"/>
   <access origin="*"/>
