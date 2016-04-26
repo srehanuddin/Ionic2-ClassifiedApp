@@ -1,0 +1,55 @@
+<ion-navbar primary *navbar>
+  <ion-title >
+    Post Advertise
+  </ion-title>
+</ion-navbar>
+
+
+    
+    
+
+<ion-content > 
+
+  <ion-list>
+
+  <ion-item>
+    <ion-label fixed>Title</ion-label>
+    <ion-input type="text" value="" #Title></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label fixed>Description</ion-label>
+    <ion-input type="text" value=""  #Description></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label fixed>Price</ion-label>
+    <ion-input type="text" value="" #Price></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Featured</ion-label>
+    <ion-toggle [(ngModel)]="featured"></ion-toggle>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Category</ion-label>
+    <ion-select #Category>
+      <ion-option *ngFor="#c of categories" value="{{c}}">{{c}}</ion-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item>
+     <img src="{{image}}">
+    <br>
+    <button block large (click)="captureImage()" >Capture</button>
+  </ion-item>
+  
+  <ion-item>
+    <button block large (click)="createAd(Title, Description, Price, Category)" >Save</button>
+  </ion-item>
+
+
+</ion-list>
+  
+</ion-content>

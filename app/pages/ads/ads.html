@@ -1,0 +1,25 @@
+<ion-navbar primary *navbar>
+  <ion-title >
+    Ads List
+  </ion-title>
+</ion-navbar>
+
+
+    
+
+<ion-content class="home"> 
+    
+   <ion-list>
+        <ion-item *ngFor="#ad of ads">
+            <ion-avatar item-left>
+            <!--<img src="images/nin-live.png">-->
+            <img src="{{ad.MainImage}}">
+            </ion-avatar>
+            <h2>{{ad.Title}}</h2>
+            <p>{{ad.Price}} | {{ad.Category}}</p>
+            <ion-icon name="md-arrow-dropright" item-right></ion-icon>
+        </ion-item>
+    </ion-list>
+ 
+  
+</ion-content>

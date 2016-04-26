@@ -1,0 +1,58 @@
+Classified App - Feature Lists
+
+User Management 
+	Signin 
+	Signup
+	Profile
+	Forgot Password
+	
+Ads Management
+	Ad Post
+	Ad Edit 
+	My Ads
+	Favourites
+
+	Ad Listing 
+		Sorting 
+			Recent
+			Most Viewed
+			Category
+	
+	Ad Detail
+		Comment 
+		Favourite
+	
+	
+User Detail
+	Name
+	Email
+	Phone Number
+	Password
+
+Ad Detail
+	Title
+	Desc
+	Category
+	Images (0 or more)
+	Price
+	isPhoneViewable
+	feature ad
+	
+Category Management
+	Title
+	
+
+Mobile App
+		App Name
+		APP logo
+		UI/UX
+		Functionality
+
+Node Server / MongoDB
+	
+
+Post
+Search	
+Catergories	
+User Login
+

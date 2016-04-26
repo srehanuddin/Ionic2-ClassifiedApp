@@ -1,0 +1,67 @@
+<ion-navbar primary *navbar>
+  <ion-title >
+    Classified App
+  </ion-title>
+</ion-navbar>
+
+<ion-row  class="main-menu">
+        <ion-col width-20>
+            <button full>
+                <ion-icon name="home"></ion-icon>
+            </button>
+        </ion-col>
+        <ion-col width-20>
+            <button full (click)="gotoPage(_AdAddPage)" >
+                <ion-icon name="md-add-circle"></ion-icon>
+            </button>
+        </ion-col>
+        <ion-col width-20>
+            <button full (click)="gotoPage(_SearchPage)">
+                <ion-icon name="md-search"></ion-icon>
+            </button>
+        </ion-col>
+        <ion-col width-20>
+            <button full (click)="categoryToggle()">
+                <ion-icon name="md-menu" ></ion-icon>
+            </button>
+        </ion-col>
+        <ion-col width-20>
+            <button full>
+                <ion-icon name="md-person-add"></ion-icon>
+            </button>
+        </ion-col>
+    </ion-row>
+    
+    
+
+<ion-content class="home"> 
+    
+    <ion-list *ngIf="category">
+        <ion-list-header>
+            Categories
+        </ion-list-header>
+        <ion-item *ngFor="#cat of categories" (click)="gotoAdsPage(cat)">
+            {{cat}}
+        </ion-item>
+    </ion-list>
+    
+  
+  <ion-card>
+        <ion-card-header>
+            Feature Ads
+        </ion-card-header>
+        
+        <ion-card-content *ngFor="#ad of ads">
+            <img src="{{ad.MainImage || 'images/nin-live.png'}}"/>
+            <ion-card-title>
+            {{ad.Title}}
+            </ion-card-title>
+            <p>
+            {{ad.Price}} | {{ad.Category}}
+            </p>
+        </ion-card-content>
+    </ion-card>
+  
+  
+  
+</ion-content>
